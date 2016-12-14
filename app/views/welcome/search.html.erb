@@ -1,5 +1,5 @@
 <%= @meetups.each do |meetup| %>
-  <h3><%= meetup["name"] %></h3>
+  <h3><% meetup["name"] %></h3>
   <p>When: <%= format_time(meetup["time"]) %></p>
   <% if meetup["venue"] && meetup["venue"]["name"] %>
     <p>Where: <%= meetup["venue"]["name"] %></p>

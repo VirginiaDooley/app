@@ -1,5 +1,5 @@
 <%= form_tag({controller: 'welcome', action: "search"}, method: 'get') do %>
-  <%= label_tag(:q, "Search for:") %>
+  <%= label_tag(:q, "Search for Structur3dPeople in your city:") %>
   <%= text_field_tag(:q) %>
   <%= submit_tag("Search") %>
 <% end %>
